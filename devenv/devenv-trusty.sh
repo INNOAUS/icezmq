@@ -29,15 +29,17 @@ sudo apt-get -y install libzmqpp-dev
 
 sudo apt-get update
 
-cd icezmq
+echo "cd icezmq" >> build.sh
 
-#wget https://dl.dropboxusercontent.com/u/57191386/zeromq-4.0.5-msvc2013-build-snapshot-20150404.zip
-#wget https://dl.dropboxusercontent.com/u/57191386/ACE-6.3.1.zip
-#wget https://dl.dropboxusercontent.com/u/57191386/Ice-3.5.1-3.msi
+echo "wget https://dl.dropboxusercontent.com/u/57191386/zeromq-4.0.5-msvc2013-build-snapshot-20150404.zip" >> build.sh
+echo "wget https://dl.dropboxusercontent.com/u/57191386/ACE-6.3.1.zip" >> build.sh
+echo "wget https://dl.dropboxusercontent.com/u/57191386/Ice-3.5.1-3.msi" >> build.sh
 
-git clone https://github.com/INNOAUS/icezmq.git
-#tar cvfz icezma.tgz ./icezmq/*
+echo "git clone https://github.com/INNOAUS/icezmq.git" >> build.sh
+echo "tar cvfz icezma.tgz ./icezmq/*" >> build.sh
 
-cd icezmq/icezmq
+echo "cd icezmq/icezmq" >> build.sh
 
-make
+echo "make" >> build.sh
+chmod +x build.sh
+

@@ -54,6 +54,7 @@ int IceClient::svc()
             }
             this->totalElapsedTimeForSending_ += icl_utils::STOPWATCH_TIMER::instance()->getElapsedMicroseconds();
         }
+	/*
         {
             Ice::OutputStreamPtr out = Ice::createOutputStream(comm);
             Ice::ByteSeq inParams, outParams;
@@ -65,6 +66,7 @@ int IceClient::svc()
                 std::cout << "Unknown user exception" << std::endl;
             }
         }
+*/
     }
     catch (const Ice::Exception& ex)
     {
