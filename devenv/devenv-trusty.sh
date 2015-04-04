@@ -1,5 +1,8 @@
 #! /bin/sh
 
+sudo echo "LANG=en_US.UTF8" >> /etc/environments
+sudo echo "LC_ALL=en_US.UTF8" >> /etc/environments
+
 mkdir icezmq
 
 sudo apt-get -y install wget
@@ -30,12 +33,13 @@ sudo apt-get -y install libzmqpp-dev
 sudo apt-get update
 
 cd icezmq
-
-
 wget https://dl.dropboxusercontent.com/u/57191386/zeromq-4.0.5-msvc2013-build-snapshot-20150404.zip
 wget https://dl.dropboxusercontent.com/u/57191386/ACE-6.3.1.zip
 wget https://dl.dropboxusercontent.com/u/57191386/Ice-3.5.1-3.msi
 
 git clone https://github.com/INNOAUS/icezmq.git
-cd icezmq
+tar cvfz icezma.tgz ./icezmq/*
+
+cd icezmq/icezmq
+
 make
