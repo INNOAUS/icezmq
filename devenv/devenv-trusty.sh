@@ -1,8 +1,5 @@
 #! /bin/sh
 
-sudo echo "LANG=en_US.UTF8" >> /etc/environment
-sudo echo "LC_ALL=en_US.UTF8" >> /etc/environment
-
 mkdir icezmq
 
 sudo apt-get -y install wget
