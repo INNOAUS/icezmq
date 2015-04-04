@@ -81,6 +81,7 @@ int IceClient::svc()
     	ACE_UNUSED_ARG(ex);
     }
 
+    ACE_DEBUG((LM_DEBUG, ACE_TEXT("(%P|%t) \tMessage Size : %d\n"), CONF::instance()->getPayloadSize()));
     ACE_DEBUG((LM_DEBUG, ACE_TEXT("(%P|%t) \tThe number of sent messages : %d\n"), this->messageCount_.value()));
     ACE_DEBUG((LM_DEBUG, ACE_TEXT("(%P|%t) \tThe total elapsed time for sending : %d ms.\n"), this->totalElapsedTimeForSending_.value()));
     ACE_DEBUG((LM_DEBUG, ACE_TEXT("(%P|%t) \tThe number of sent messages (1Sec): %d\n"), this->messageCountInOneSecond_.value()));
