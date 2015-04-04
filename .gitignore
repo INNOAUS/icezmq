@@ -1,0 +1,17 @@
+.DS_Store
+DerivedData
+Build
+obj
+*.obj
+*.o
+*.a
+*.dylib
+*.xcuserstate
+*.opensdf
+*.sdf
+*.ipch
+*.lib
+*.suo
+*.exe
+*.ilk
+*.pdb
