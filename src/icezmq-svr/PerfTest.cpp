@@ -18,7 +18,6 @@
 // </auto-generated>
 //
 
-#include <stdafx.h>
 #include <PerfTest.h>
 #include <Ice/LocalException.h>
 #include <Ice/ObjectFactory.h>

@@ -7,6 +7,7 @@ TARGETS     = $(SERVER)
 OBJS        = icezmq-svr.o \
               Configuration.o \
               ITesterImpl.o \
+              PerfTest.o \
               ServerBaseTask.o \
               ZmqServer.o \
               IceServer.o \
@@ -22,8 +23,6 @@ include $(top_srcdir)/config/Make.rules
 
 CPPFLAGS    := -I. -I.. -I/usr/include -I/opt/local/include -I/usr/include/postgresql $(CPPFLAGS)
 CPPFLAGS    := -DACE_AS_STATIC_LIBS $(CPPFLAGS)
-
-SLICE2CPPFLAGS	:= -I.. -I/usr/slice $(SLICE2CPPFLAGS)
 
 #ifeq ($(OPTIMIZE), yes)
 #    CPPFLAGS := -O3 $(CPPFLAGS)
