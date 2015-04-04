@@ -26,7 +26,6 @@ bool ITesterImpl::ice_invoke(const std::vector<Ice::Byte>& inParams, std::vector
         ICE_SERVER::instance()->totalElapsedTimeForReceiving_ += icl_utils::STOPWATCH_TIMER::instance()->getElapsedMicroseconds();
         ICE_SERVER::instance()->messageCount_++;
         in->endEncapsulation();
-        std::cout << "Received : " << ICE_SERVER::instance()->messageCount_.value() << std::endl;
         return true;
     }
     else if (curr.operation == "shutdown")

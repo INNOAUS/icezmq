@@ -22,7 +22,6 @@ int ZmqServer::svc()
         zmq::message_t reply(1);
         memcpy((void *)reply.data(), "W", 1);
         this->socket_->send(reply);
-	std::cout << "Received : " << this->messageCount_.value() << std::endl;
     }
 
     delete this->socket_;
