@@ -24,7 +24,7 @@ CPPFLAGS    := -DACE_AS_STATIC_LIBS $(CPPFLAGS)
 #endif
 
 LDFLAGS		:= -L$(top_srcdir)/lib -L/usr/lib -L/opt/local/lib -L/Library/Developer/Ice-3.5/lib/c++11 $(LDFLAGS)
-LINKWITH    := -lzmq -lACE -lIce -lIceUtil -lIceSSL -lFreeze -lIceStorm -lIcePatch2 -lIceGrid -lGlacier2 -lIceBox -linnoaus
+LINKWITH    := -lzmq -lACE -lIce -lIceUtil
 
 $(SERVER): $(OBJS)
 	rm -f $@
