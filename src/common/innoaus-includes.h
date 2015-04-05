@@ -10,7 +10,7 @@
 #include <common/innoaus-ice-includes.h>
 
 #if defined(INNOAUS_USE_ZMQ)
-#   include <libinnoaus/innoaus-zeromq-includes.h>
+#   include <common/innoaus-zeromq-includes.h>
 #endif
 
 #include <common/innoaus-string-utils.h>
