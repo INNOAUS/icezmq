@@ -9,7 +9,9 @@ OBJS        = icezmq-svr.o \
               ITesterImpl.o \
               ServerBaseTask.o \
               ZmqServer.o \
-              IceServer.o
+              IceServer.o \
+              innoaus-ace-stopwatch.o \
+              innoaus-string-utils.o
 
 
 SRCS        = $(OBJS:.o=.cpp)
@@ -28,7 +30,7 @@ SLICE2CPPFLAGS	:= -I.. -I/usr/slice $(SLICE2CPPFLAGS)
 #endif
 
 LDFLAGS		:= -L$(top_srcdir)/lib -L/usr/lib -L/opt/local/lib -L/Library/Developer/Ice-3.5/lib/c++11 $(LDFLAGS)
-LINKWITH    := -lzmq -lACE -lIce -lIceUtil
+LINKWITH    := -lzmq -lACE -lIce -lIceUtil -lGlacier2 -lIceStorm
 
 $(SERVER): $(OBJS)
 	rm -f $@
