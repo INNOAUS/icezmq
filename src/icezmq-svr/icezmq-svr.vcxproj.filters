@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="common">
-      <UniqueIdentifier>{51eac245-4ba7-436a-a8f6-0a1ce4513821}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -45,29 +42,29 @@
     <ClInclude Include="ServerBaseTask.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-ace-includes.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-ace-includes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-ace-stopwatch.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-ace-stopwatch.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-includes.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-ice-includes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-string-utils.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-includes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\zmq.hpp">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-namespaces.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-zeromq-includes.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-string-utils.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-namespaces.h">
-      <Filter>common</Filter>
+    <ClInclude Include="innoaus-zeromq-includes.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\innoaus-ice-includes.h">
-      <Filter>common</Filter>
+    <ClInclude Include="zmq.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -95,21 +92,17 @@
     <ClCompile Include="ServerBaseTask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\innoaus-ace-stopwatch.cpp">
-      <Filter>common</Filter>
+    <ClCompile Include="innoaus-ace-stopwatch.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\innoaus-string-utils.cpp">
-      <Filter>common</Filter>
+    <ClCompile Include="innoaus-string-utils.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
     <None Include="PerfTest.ice" />
-    <None Include="..\common\zmq.hpp.LICENSE">
-      <Filter>common</Filter>
-    </None>
-    <None Include="..\common\zmq.hpp.README">
-      <Filter>common</Filter>
-    </None>
+    <None Include="zmq.hpp.LICENSE" />
+    <None Include="zmq.hpp.README" />
   </ItemGroup>
 </Project>

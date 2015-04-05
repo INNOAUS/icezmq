@@ -170,29 +170,29 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\common\innoaus-ace-includes.h" />
-    <ClInclude Include="..\common\innoaus-ace-stopwatch.h" />
-    <ClInclude Include="..\common\innoaus-ice-includes.h" />
-    <ClInclude Include="..\common\innoaus-includes.h" />
-    <ClInclude Include="..\common\innoaus-namespaces.h" />
-    <ClInclude Include="..\common\innoaus-string-utils.h" />
-    <ClInclude Include="..\common\innoaus-zeromq-includes.h" />
-    <ClInclude Include="..\common\zmq.hpp" />
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="IceServer.h" />
+    <ClInclude Include="innoaus-ace-includes.h" />
+    <ClInclude Include="innoaus-ace-stopwatch.h" />
+    <ClInclude Include="innoaus-ice-includes.h" />
+    <ClInclude Include="innoaus-includes.h" />
+    <ClInclude Include="innoaus-namespaces.h" />
+    <ClInclude Include="innoaus-string-utils.h" />
+    <ClInclude Include="innoaus-zeromq-includes.h" />
     <ClInclude Include="ITesterImpl.h" />
     <ClInclude Include="PerfTest.h" />
     <ClInclude Include="ServerBaseTask.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="zmq.hpp" />
     <ClInclude Include="ZmqServer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\common\innoaus-ace-stopwatch.cpp" />
-    <ClCompile Include="..\common\innoaus-string-utils.cpp" />
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="IceServer.cpp" />
     <ClCompile Include="icezmq-svr.cpp" />
+    <ClCompile Include="innoaus-ace-stopwatch.cpp" />
+    <ClCompile Include="innoaus-string-utils.cpp" />
     <ClCompile Include="ITesterImpl.cpp" />
     <ClCompile Include="PerfTest.cpp" />
     <ClCompile Include="ServerBaseTask.cpp" />
@@ -205,10 +205,10 @@
     <ClCompile Include="ZmqServer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\common\zmq.hpp.LICENSE" />
-    <None Include="..\common\zmq.hpp.README" />
     <None Include="Makefile" />
     <None Include="PerfTest.ice" />
+    <None Include="zmq.hpp.LICENSE" />
+    <None Include="zmq.hpp.README" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libinnoaus\libinnoaus.vcxproj">

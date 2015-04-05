@@ -2,7 +2,7 @@
 #define __innoaus_zeromq_includes_h__
 
 
-#include <common/zmq.hpp>
+#include <zmq.hpp>
 
 
 #ifdef _MSC_VER

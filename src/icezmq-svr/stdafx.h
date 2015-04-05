@@ -28,7 +28,7 @@
 // TODO: reference additional headers your program requires here
 
 #define INNOAUS_USE_ZMQ
-#include <common/innoaus-includes.h>
+#include <innoaus-includes.h>
 
 #include "Configuration.h"
 
