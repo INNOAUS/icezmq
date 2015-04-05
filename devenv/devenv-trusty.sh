@@ -36,6 +36,7 @@ echo "wget https://dl.dropboxusercontent.com/u/57191386/ACE-6.3.1.zip" >> build.
 echo "wget https://dl.dropboxusercontent.com/u/57191386/Ice-3.5.1-3.msi" >> build.sh
 
 echo "git clone https://github.com/INNOAUS/icezmq.git" >> build.sh
+echo "cd .." >> build.sh
 echo "tar cvfz icezma.tgz ./icezmq/*" >> build.sh
 
 echo "cd icezmq/icezmq" >> build.sh
