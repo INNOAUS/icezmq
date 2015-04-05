@@ -11,9 +11,8 @@ top_srcdir	= ..
 
 include $(top_srcdir)/config/Make.rules
 
-SUBDIRS     = libinnoaus \
-              libtest \
-              opencvtest
+SUBDIRS     = icezmq-cli \
+              icezmq-svr
 
 .PHONY: $(EVERYTHING) $(SUBDIRS)
 

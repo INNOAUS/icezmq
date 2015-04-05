@@ -1,0 +1,39 @@
+top_srcdir  = ../..
+
+SERVER      = icezmq-svr
+
+TARGETS     = $(SERVER)
+
+OBJS        = icezmq-svr.o \
+              Configuration.o \
+              ITesterImpl.o \
+              ServerBaseTask.o \
+              ZmqServer.o \
+              IceServer.o
+
+
+SRCS        = $(OBJS:.o=.cpp)
+SLICE_SRCS	= PerfTest.ice
+
+include $(top_srcdir)/config/Make.rules
+
+
+CPPFLAGS    := -I. -I.. -I/usr/include -I/opt/local/include -I/usr/include/postgresql $(CPPFLAGS)
+CPPFLAGS    := -DACE_AS_STATIC_LIBS $(CPPFLAGS)
+
+SLICE2CPPFLAGS	:= -I.. -I/usr/slice $(SLICE2CPPFLAGS)
+
+#ifeq ($(OPTIMIZE), yes)
+#    CPPFLAGS := -O3 $(CPPFLAGS)
+#endif
+
+LDFLAGS		:= -L$(top_srcdir)/lib -L/usr/lib -L/opt/local/lib -L/Library/Developer/Ice-3.5/lib/c++11 $(LDFLAGS)
+LINKWITH    := -lzmq -lACE -lIce -lIceUtil -lIceSSL -lFreeze -lIceStorm -lIcePatch2 -lIceGrid -lGlacier2 -lIceBox -linnoaus
+
+$(SERVER): $(OBJS)
+	rm -f $@
+	$(CXX) $(LDFLAGS) -o $@ $(OBJS) $(DB_RPATH_LINK) $(LIBS) $(LINKWITH)
+	cp $@ $(top_srcdir)/bin
+clean::
+
+
