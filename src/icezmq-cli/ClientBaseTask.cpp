@@ -8,6 +8,8 @@ ClientBaseTask::ClientBaseTask()
     this->totalElapsedTimeForSending_ = 0;
     this->messageCountInOneSecond_ = 0;
     this->totalElapsedTimeForSendingInOneSecond_ = 0;
+    this->averageMessageCountInOneSecond_ = 0;
+    this->averageElapsedTimeForSendingInOneSecond_ = 0;
 }
 
 

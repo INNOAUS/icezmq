@@ -41,6 +41,11 @@ public:
         return this->properties_->getPropertyAsIntWithDefault("loop", 10);
     }
 
+    int getTestCount()
+    {
+        return this->properties_->getPropertyAsIntWithDefault("loop2", 1);
+    }
+
 private:
     Ice::PropertiesPtr properties_;
 };

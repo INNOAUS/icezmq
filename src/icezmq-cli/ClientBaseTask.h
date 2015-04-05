@@ -18,6 +18,9 @@ protected:
     ACE_Atomic_Op<ACE_Mutex, int> messageCountInOneSecond_;
     ACE_Atomic_Op<ACE_Mutex, ACE_hrtime_t> totalElapsedTimeForSending_; // milli seconds
     ACE_Atomic_Op<ACE_Mutex, ACE_hrtime_t> totalElapsedTimeForSendingInOneSecond_; // milli seconds
+
+    ACE_Atomic_Op<ACE_Mutex, int> averageMessageCountInOneSecond_;
+    ACE_Atomic_Op<ACE_Mutex, ACE_hrtime_t> averageElapsedTimeForSendingInOneSecond_; // milli seconds
 };
 
 
