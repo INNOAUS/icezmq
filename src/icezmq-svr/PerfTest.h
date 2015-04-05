@@ -18,8 +18,8 @@
 // </auto-generated>
 //
 
-#ifndef __PerfTest_h__
-#define __PerfTest_h__
+#ifndef __D__git_innoaus_icezmq_src_icezmq_svr_PerfTest_h__
+#define __D__git_innoaus_icezmq_src_icezmq_svr_PerfTest_h__
 
 #include <Ice/ProxyF.h>
 #include <Ice/ObjectF.h>
